@@ -1,0 +1,59 @@
+﻿@model List<Registar.DomainModel.Bike>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body >
+    <div>
+        
+        <p style="font-style:italic; font-size:large"><strong>Results from the search: </strong></p>
+        <br/>
+       
+        <table border="1" class="text-center" style="border:thick; ">
+            <tr style="background-color:gray;">
+                <th style="padding:10px"> RegNum</th>
+                <th style="padding:10px">Producer</th>
+                <th style="padding:10px">Model</th>
+                <th style="padding:10px">Colour</th>
+                <th style="padding:10px">City</th>
+            </tr>
+            @foreach (var bike in this.Model)
+            {
+                <tr>
+                    <td style="padding:10px">@bike.RegNumber</td>
+                    <td style="padding:10px">@bike.Prdoucer</td>
+                    <td style="padding:10px">@bike.Model</td>
+                    <td style="padding:10px">@bike.Colour</td>
+                    <td style="padding:10px">@bike.City</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>
+@section SideLinks
+    {
+<div style="float:right">
+    <a href="#" style="color:gray">See list of bikes in your city</a>
+    <br/>
+    <a href="#" style="color:gray">See list of all stolen bikes</a>
+    
+    
+    </div>
+    }
+
+@section SideImage
+    {
+<div>
+    <img src="~/Content/Images/bikes_Mukluk2_2013.jpg" style="width:90%;"/>
+</div>
+    }
+</html>
