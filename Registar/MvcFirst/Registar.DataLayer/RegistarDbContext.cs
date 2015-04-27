@@ -1,4 +1,5 @@
-﻿using Registar.DomainModel;
+﻿using Registar.Common.Interfaces;
+using Registar.DomainModel;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -11,7 +12,7 @@ namespace Registar.DataLayer
     /// <summary>
     /// Class that will help us to get out DbContext
     /// </summary>
-   public class RegistarDbContext : DbContext
+   public class RegistarDbContext : DbContext, IRegistarContext
     {
        /// <summary>
        /// For now we have only one table Bikes in the database so we need only one DbSet Bikes

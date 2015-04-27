@@ -152,9 +152,17 @@
       <Project>{2cea7705-e62b-4e39-82f1-48f92533bc35}</Project>
       <Name>Registar.BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Registar.Common\Registar.Common.csproj">
+      <Project>{06b45ba8-e084-4ebb-86d5-c32b47fa7a55}</Project>
+      <Name>Registar.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Registar.DomainModel\Registar.DomainModel.csproj">
       <Project>{425d8b4b-7796-476e-91f5-f45b814bef41}</Project>
       <Name>Registar.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Register.Repository\Registar.Repository.csproj">
+      <Project>{262ec166-43f9-46dc-b03e-a93d013c8423}</Project>
+      <Name>Registar.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Registar.Common;
+using Register.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,8 +13,15 @@ namespace MvcFirst
     {
         protected void Application_Start()
         {
+            InitProjects();
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+        private void InitProjects()
+        {
+            //
+            RepositoryManager.RegisterFactory(new DefaultRepositoryFactory());
+            DataContextManager.RegisterFactory(new DataContextRepositoryFactory());
         }
     }
 }

@@ -1,0 +1,4 @@
+E:\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.dll
+E:\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.pdb
+E:\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.dll
+E:\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.pdb

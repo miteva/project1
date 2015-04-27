@@ -1,0 +1,16 @@
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Register.Repository.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Register.Repository.pdb
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Registar.Common.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Registar.DomainModel.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Registar.Common.pdb
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Registar.DomainModel.pdb
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\obj\Debug\Registar.Repository.csprojResolveAssemblyReference.cache
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\obj\Debug\Register.Repository.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\obj\Debug\Register.Repository.pdb
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Register.Repository.dll.config
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\EntityFramework.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Registar.DataLayer.dll
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\Registar.DataLayer.pdb
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\EntityFramework.xml
+E:\GitHub\project1\Registar\MvcFirst\Register.Repository\bin\Debug\EntityFramework.SqlServer.xml
