@@ -1,7 +1,10 @@
-﻿using Registar.BusinessLayer.Contracts;
+﻿using Autofac;
+using Registar.BusinessLayer.Contracts;
 using Registar.Common;
+using Registar.Common.Interfaces;
 using Registar.DataLayer;
 using Registar.DomainModel;
+using Register.Repository;
 using Register.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -25,38 +28,24 @@ namespace Registar.BusinessLayer.Handlers
         /// <returns></returns>
         protected override BikeSearchResult ExecuteCommand(BikeSearchCommand command)
         {
-            IBikeRepository repo = RepositoryManager.CreateRepository<IBikeRepository>();
+             IContainer Container=RegisterComponents.RegisterAllComponents();
+             using (var scope = Container.BeginLifetimeScope())
+             {
+                 //TODO if we want to use autofac for creating repositoryfatory we should use the commented line above the code
+                 //var repo = scope.Resolve<IRepositoryFactory>();
+                // var bikeRepo = repo.CreateRepository();
+                // IBikeRepository repo = RepositoryManager.CreateRepository<IBikeRepository>();
 
-            BikeSearchResult _result = new BikeSearchResult();
+                 //with this line using autofac we don't need our manually created factory, but directly we can create BikeRepository
+                 //because IBikeRepository is mapped into BikeRepository
+                 var repo = scope.Resolve<IBikeRepository>();
+                 BikeSearchResult _result = new BikeSearchResult();
 
-            _result.Result = repo.SearchBike() as List<Bike>;
-            return _result;
-            //    List<Bike> bikes = new List<Bike>();
-            //    IContextTable table=new BikeContextTable();
-            //    bikes = table.GetTableFromContext<Bike>();
+                 _result.Result = repo.SearchBike() as List<Bike>;
+                 return _result;
+             }
 
-            //     if (command.Colour != null) {
-
-            //         foreach (Bike b in bikes) 
-            //         {
-            //             if (b.Colour == command.Colour)
-            //                 _result.Result.Add(b);
-            //         }
-            //     }
-            //     if (command.Producer != null)
-            //     {
-
-            //         foreach (Bike b in bikes)
-            //         {
-            //             if (b.Prdoucer == command.Producer)
-            //                 _result.Result.Add(b);
-            //         }
-            //     }
-
-
-            //    return _result;
-            //}
-
+            
 
         }
     }

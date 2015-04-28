@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Registar.Common
 {
+    /// <summary>
+    /// class for manually creating context from factory
+    /// </summary>
    public class DataContextManager
     {
         public static IDataContextReposioryFactory theFactory;

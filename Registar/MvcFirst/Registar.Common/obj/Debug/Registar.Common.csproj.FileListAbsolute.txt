@@ -2,3 +2,13 @@ E:\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.d
 E:\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.pdb
 E:\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.dll
 E:\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.pdb
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.dll.config
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.dll
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.Common.pdb
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\log4net.dll
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.DomainModel.dll
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\Registar.DomainModel.pdb
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\bin\Debug\log4net.xml
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.csprojResolveAssemblyReference.cache
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.dll
+C:\Users\Miteva\Documents\GitHub\project1\Registar\MvcFirst\Registar.Common\obj\Debug\Registar.Common.pdb

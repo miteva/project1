@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Register.Repository
 {
+    /// <summary>
+    /// if we manualy create the factory(not with autofac) we will need this class
+    /// </summary>
     public class DataContextRepositoryFactory : IDataContextReposioryFactory
     {
         public TContext CreateContext<TContext>() where TContext : IDataContextRepository

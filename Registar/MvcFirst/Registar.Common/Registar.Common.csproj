@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,12 +45,24 @@
     <Compile Include="DataContextManager.cs" />
     <Compile Include="Interfaces\IDataContextReposioryFactory.cs" />
     <Compile Include="Interfaces\IDataContextRepository.cs" />
-    <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IRepositoryFactory.cs" />
     <Compile Include="Logging.cs" />
     <Compile Include="RepositoryManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Log4Net.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Registar.DomainModel\Registar.DomainModel.csproj">
+      <Project>{425d8b4b-7796-476e-91f5-f45b814bef41}</Project>
+      <Name>Registar.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

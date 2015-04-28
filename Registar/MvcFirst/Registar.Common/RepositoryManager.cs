@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Registar.Common
 {
+    /// <summary>
+    /// if we want to create facoryrepository with autofac we have to delete CreateRepository.
+    /// 
+    /// </summary>
     public class RepositoryManager
     {
         public static IRepositoryFactory theFactory;

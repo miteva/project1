@@ -1,0 +1,6 @@
+[Header]\r\n2015-04-28 02:45:39,148 [7] WARN  Registar.Common.Logging ====BikeSearch====
+[Header]\r\n2015-04-28 03:25:44,062 [6] WARN  Registar.Common.Logging ====BikeSearch====
+[Header]\r\n2015-04-28 03:36:44,323 [8] WARN  Registar.Common.Logging ====BikeSearch====
+[Header]\r\n2015-04-28 03:39:27,448 [6] WARN  Registar.Common.Logging ====BikeSearch====
+[Header]\r\n2015-04-28 04:06:05,611 [6] WARN  Registar.Common.Logging ====BikeSearch====
+[Header]\r\n2015-04-28 04:26:43,144 [7] WARN  Registar.Common.Logging ====BikeSearchTestILogger====

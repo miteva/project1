@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Register.Repository.Interfaces
 {
+    /// <summary>
+    /// this interface is used for mapping into BikeRepository
+    /// </summary>
     public interface IBikeRepository : IRepository
     {
         IList<Bike> SearchBike();

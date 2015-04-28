@@ -17,6 +17,7 @@ namespace MvcFirst.Controllers
             //creating new command and add some filters
             BikeSearchCommand command = new BikeSearchCommand();
             command.Colour = "Red";
+            
             //invoking the SearchCommand
             BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand,BikeSearchResult>(command);
             

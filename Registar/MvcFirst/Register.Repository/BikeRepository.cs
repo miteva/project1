@@ -7,18 +7,35 @@ using System.Threading.Tasks;
 using Registar.DomainModel;
 using Registar.DataLayer;
 using Registar.Common;
+using System.Diagnostics;
+using Autofac;
+using Registar.Common.Interfaces;
 
 namespace Register.Repository
 {
-    internal class BikeRepository : IBikeRepository
+    
+    // public class BikeRepository : IBikeRepository,IRepository
+    /// <summary>
+    /// if we want to create repositoryfactory with autofac we have to use the commented lines above the summary.
+    /// This class will help us to connect with the database
+    /// </summary>
+    public class BikeRepository : IBikeRepository
     {
-      //  Logging.LogError("====BikeSearc====");
+
         public IList<Bike> SearchBike()
         {
-            var context = DataContextManager.CreateContext<IRegistarContext>();
+            Logging.LogWarn("====BikeSearchTestILogger====");
+            
+
+            IContainer Container = RegisterComponents.RegisterAllComponents();
+            using (var scope = Container.BeginLifetimeScope())
             {
-                return context.Bikes.ToList();
+                //creating context using autofac
+                var context = Container.Resolve<IRegistarContext>();
+                    return context.Bikes.ToList();
+                
             }
         }
     }
 }
+
