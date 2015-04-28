@@ -23,7 +23,7 @@ namespace Registar.DataLayer
        /// getting our context and fill the DbSet with the entries that are in the database
        /// </summary>
      public RegistarDbContext()
-         : base("RegistarDb")
+         : base("Registar")
         {
             Bikes = this.Set<Bike>();
         }

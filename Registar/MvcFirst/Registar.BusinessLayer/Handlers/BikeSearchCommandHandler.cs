@@ -17,7 +17,7 @@ namespace Registar.BusinessLayer.Handlers
     /// <summary>
     /// Class for Handling the Search Command for Bikes, inherits from generic class CommandHandlerBase
     /// </summary>
-    internal class BikeSearchCommandHandler : CommandHandlerBase<BikeSearchCommand, BikeSearchResult>
+    public class BikeSearchCommandHandler : CommandHandlerBase<BikeSearchCommand, BikeSearchResult>
 
     {
 
@@ -34,11 +34,11 @@ namespace Registar.BusinessLayer.Handlers
                  //TODO if we want to use autofac for creating repositoryfatory we should use the commented line above the code
                  //var repo = scope.Resolve<IRepositoryFactory>();
                 // var bikeRepo = repo.CreateRepository();
-                // IBikeRepository repo = RepositoryManager.CreateRepository<IBikeRepository>();
+               IBikeRepository repo = RepositoryManager.CreateRepository<IBikeRepository>();
 
                  //with this line using autofac we don't need our manually created factory, but directly we can create BikeRepository
                  //because IBikeRepository is mapped into BikeRepository
-                 var repo = scope.Resolve<IBikeRepository>();
+                // var repo = scope.Resolve<IBikeRepository>();
                  BikeSearchResult _result = new BikeSearchResult();
 
                  _result.Result = repo.SearchBike() as List<Bike>;

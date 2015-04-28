@@ -17,7 +17,7 @@ namespace Registar.DataLayer
         public BikeConfiguration()
         {
             
-            this.ToTable("Bikes").HasKey(p=>p.BikeId);
+            this.ToTable("Bikes","data").HasKey(p=>p.BikeId);
             this.Property(p => p.BikeId).HasColumnName("Id");
             this.Property(p => p.RegNumber).HasColumnName("RegNumber");
             this.Property(p => p.Prdoucer).HasColumnName("Producer");
