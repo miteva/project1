@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/GetBikesFromDatabaseAjaxJson.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+
+           getBikesFromDatabase();
+       })
+
+    </script>
+    <style>
+        th {
+        
+        background-color:gray;
+        }
+        th,td {
+        
+            padding:10px;
+        }
+        
+    </style>
+    <title>GetBikes</title>
+</head>
+<body>
+    <div>  
+
+        <p style="font-style:italic; font-size:large"><strong>Results from the search with JSON: </strong></p>
+        <br/>
+        <table border="1" id="tableBikes"  class="text-center" style="border:thick; ">
+            
+        </table>
+</div>
+    @section SideLinks
+    {
+        <div style="float:right">
+            <a href="#" style="color:gray">See list of bikes in your city</a>
+            <br />
+            <a href="#" style="color:gray">See list of all stolen bikes</a>
+
+
+        </div>
+    }
+
+    @section SideImage
+    {
+        <div>
+            <img src="~/Content/Images/bikes_Mukluk2_2013.jpg" style="width:90%;" />
+        </div>
+    }
+
+
+</body>
+</html>

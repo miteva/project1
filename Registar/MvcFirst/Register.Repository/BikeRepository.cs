@@ -31,7 +31,7 @@ namespace Register.Repository
             using (var scope = Container.BeginLifetimeScope())
             {
                 //creating context using autofac
-                var context = Container.Resolve<IRegistarContext>();
+                RegistarDbContext context =(RegistarDbContext)Container.Resolve<IRegistarContext>();
                 return context.Bikes.ToList();
 
             }
