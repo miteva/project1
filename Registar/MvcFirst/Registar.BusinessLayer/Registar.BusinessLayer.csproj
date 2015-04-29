@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandInvoker.cs" />
+    <Compile Include="Contracts\AddBikeCommand.cs" />
+    <Compile Include="Contracts\AddBikeResult.cs" />
+    <Compile Include="Handlers\AddBikeCommandHandler.cs" />
     <Compile Include="Handlers\_CommandHandlerBase.cs" />
     <Compile Include="Contracts\BikeSearchCommand.cs" />
     <Compile Include="Contracts\BikeSearchResult.cs" />

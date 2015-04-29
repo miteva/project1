@@ -43,6 +43,8 @@ namespace Registar.BusinessLayer
 
             if (typeof(TRequest) == typeof(BikeSearchCommand))
                 return new BikeSearchCommandHandler();
+            if (typeof(TRequest) == typeof(AddBikeCommand))
+                return new AddBikeCommandHandler();
             return null;
         }
     }

@@ -15,5 +15,6 @@ namespace Register.Repository.Interfaces
     public interface IBikeRepository : IRepository
     {
         IList<Bike> SearchBike();
+        Bike AddBike(Bike b);
     }
 }

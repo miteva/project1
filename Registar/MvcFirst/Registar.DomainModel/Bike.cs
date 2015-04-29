@@ -20,6 +20,7 @@ namespace Registar.DomainModel
         public string Model { set; get; }
         public string Colour { set; get; }
         public string City { set; get; }
+        public int BikeOwnerId { set; get; }
 
         [NotMapped]
         public Object IgnoreMe { set; get; }

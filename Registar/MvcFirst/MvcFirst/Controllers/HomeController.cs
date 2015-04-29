@@ -24,9 +24,11 @@ namespace MvcFirst.Controllers
             return View(_result.Result);
         }
 
-        public ActionResult Profile() {
+        public ActionResult AddBike() {
 
-            return View();
+            AddBikeCommand command = new AddBikeCommand();
+            AddBikeResult _result = CommandInvoker.InvokeCommand<AddBikeCommand, AddBikeResult>(command);
+            return View(_result.Bike);
         }
     }
 }

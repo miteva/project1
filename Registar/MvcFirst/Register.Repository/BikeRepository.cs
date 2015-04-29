@@ -25,17 +25,37 @@ namespace Register.Repository
         public IList<Bike> SearchBike()
         {
             Logging.LogWarn("====BikeSearchTestILogger====");
-            
+
 
             IContainer Container = RegisterComponents.RegisterAllComponents();
             using (var scope = Container.BeginLifetimeScope())
             {
                 //creating context using autofac
                 var context = Container.Resolve<IRegistarContext>();
-                    return context.Bikes.ToList();
-                
+                return context.Bikes.ToList();
+
             }
         }
+
+            public Bike AddBike(Bike b)
+            {
+            IContainer Container = RegisterComponents.RegisterAllComponents();
+            
+            using (var scope = Container.BeginLifetimeScope())
+            {
+                //creating context using autofac
+                RegistarDbContext context = (RegistarDbContext)Container.Resolve<IRegistarContext>();
+                
+                context.Bikes.Add(b);
+                context.SaveChanges();
+
+                return context.Bikes.FirstOrDefault(x => x.BikeId == b.BikeId);
+
+
+            }
+
+        }
+        }
     }
-}
+
 

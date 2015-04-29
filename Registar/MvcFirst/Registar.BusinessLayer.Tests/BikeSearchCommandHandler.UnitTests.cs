@@ -8,6 +8,7 @@ using Registar.DomainModel;
 using System.Collections.Generic;
 using Registar.Common.Interfaces;
 using Registar.Common;
+using Registar.DataLayer;
 
 namespace Registar.BusinessLayer.Tests
 {
@@ -15,7 +16,7 @@ namespace Registar.BusinessLayer.Tests
     public class BikeSearchCommandHandlerUnitTests
     {
         [TestMethod]
-        public void ExecuteCommand_SmokeTest_NoException_Test()
+        public void ExecuteBikeSearchCommand_SmokeTest_NoException_Test()
         {
             //setup
             BikeSearchCommandHandler handler = new BikeSearchCommandHandler();
@@ -35,22 +36,25 @@ namespace Registar.BusinessLayer.Tests
         /// for that we have to add ExpectedException(typeof(NullReferenceException) attribute
         /// and we dont use assets
         /// </summary>
-        [TestMethod,ExpectedException(typeof(NullReferenceException))]
+        [TestMethod, ExpectedException(typeof(NullReferenceException))]
         public void ExecuteCommand_NullRepositoryFactory_ThrowsNullException_Test()
         {
             //setup
             RepositoryManager.RegisterFactory(null);
             BikeSearchCommandHandler handler = new BikeSearchCommandHandler();
             BikeSearchCommand command = new BikeSearchCommand();
-            
+
             //exercise
             BikeSearchResult result = handler.Execute(command) as BikeSearchResult;
 
 
         }
+
+      
     }
 
-   
+}
+
 
     public class BikeRepoTStub : IBikeRepository
     {
@@ -59,6 +63,10 @@ namespace Registar.BusinessLayer.Tests
             List<Bike> result = new List<Bike>();
             return result;
         }
+        public Bike AddBike(Bike b)
+        {
+            return b;
+        }
     }
 
     public class BikeRepoStubFactory : IRepositoryFactory
@@ -66,7 +74,21 @@ namespace Registar.BusinessLayer.Tests
         public TRepository CreateRepository<TRepository>() where TRepository : IRepository
         {
             BikeRepoTStub result = new BikeRepoTStub();
-            return (TRepository)(object)result; 
+            return (TRepository)(object)result;
         }
     }
-}
+
+
+    public class Producer 
+    {
+        List<string> AllowedModel = new List<string>();
+    public Producer()
+    {
+        AllowedModel.Add("CityBike");
+        AllowedModel.Add("MountainBike");
+    }
+        
+    }
+
+
+
