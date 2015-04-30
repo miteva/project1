@@ -1,0 +1,6 @@
+E:\GitHub\project1\project1\Registar\MvcFirst\AngularDemo\bin\AngularDemo.dll.config
+E:\GitHub\project1\project1\Registar\MvcFirst\AngularDemo\bin\AngularDemo.dll
+E:\GitHub\project1\project1\Registar\MvcFirst\AngularDemo\bin\AngularDemo.pdb
+E:\GitHub\project1\project1\Registar\MvcFirst\AngularDemo\obj\Debug\AngularDemo.csprojResolveAssemblyReference.cache
+E:\GitHub\project1\project1\Registar\MvcFirst\AngularDemo\obj\Debug\AngularDemo.dll
+E:\GitHub\project1\project1\Registar\MvcFirst\AngularDemo\obj\Debug\AngularDemo.pdb

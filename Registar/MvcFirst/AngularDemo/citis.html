@@ -1,0 +1,20 @@
+﻿<table width="90%" ng-show="showCities">
+    <thead>
+        <tr>
+
+            <th><strong>#</strong></th>
+            <th ng-click="sort('name')"><strong>Name:</strong> </th>
+            <th><strong>Longitude:</strong> </th>
+            <th><strong>Latitude: </strong></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="city in cities | orderBy:sortColumn | filter: city | limitTo:5">
+            <th>{{city.id }}</th>
+            <th>{{city.name | uppercase}}</th>
+            <th>{{city.coord.lon | number:2}}</th>
+            <th>{{city.coord.lat |number:2}}</th>
+        </tr>
+    </tbody>
+</table>
