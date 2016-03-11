@@ -1,25 +1,21 @@
 ﻿@model List<Registar.DomainModel.Bike>
-
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <script src="~/Scripts/jquery-1.9.1.js" ></script>
-   
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
 
     <title>Index</title>
 </head>
-<body >
+<body>
     <div>
-        
+
         <p style="font-style:italic; font-size:large"><strong>Results from the search: </strong></p>
-        <br/>
-       
+        <br />
+
         <table border="1" class="text-center" style="border:thick; ">
             <tr style="background-color:gray;">
                 <th style="padding:10px"> RegNum</th>
@@ -38,29 +34,25 @@
                     <td style="padding:10px">@bike.City</td>
                 </tr>
             }
-
         </table>
-
-        
 
     </div>
 </body>
 @section SideLinks
     {
-<div style="float:right">
-    <a href="#" style="color:gray">See list of bikes in your city</a>
-    <br/>
-    <a href="#" style="color:gray">See list of all stolen bikes</a>
-    
-    
-    </div>
-    }
+    <div style="float: right; color: gray">
+        @*<a href="#" style="color:gray">See list of bikes in your city</a>*@
+        <a href="#">See list of all stolen bikes</a>
+        <br />
+        @Html.ActionLink("See list of bikes in your city", "BikesFromCity", new { cityName = "Skopje" })
 
+
+    </div>
+}
 @section SideImage
     {
-<div>
-    <img src="~/Content/Images/bikes_Mukluk2_2013.jpg" style="width:90%;"/>
-</div>
-    }
-
+    <div>
+        <img src="~/Content/Images/bikes_Mukluk2_2013.jpg" style="width:90%;" />
+    </div>
+}
 </html>

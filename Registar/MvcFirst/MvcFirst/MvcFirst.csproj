@@ -144,6 +144,8 @@
     <Content Include="Views\Home\AddBike.cshtml" />
     <Content Include="Views\Home\GetBikes.cshtml" />
     <Content Include="Views\Home\GetBikesJSON.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\BikesFromCity.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

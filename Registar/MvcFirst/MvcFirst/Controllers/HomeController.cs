@@ -17,11 +17,11 @@ namespace MvcFirst.Controllers
         {
             //creating new command and add some filters
             BikeSearchCommand command = new BikeSearchCommand();
-            command.Colour = "Red";
-  
+            //command.Colour = "Red";
+
             //invoking the SearchCommand
-            BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand,BikeSearchResult>(command);
-            
+            BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand, BikeSearchResult>(command);
+
             return View(_result.Result);
         }
 
@@ -40,21 +40,34 @@ namespace MvcFirst.Controllers
 
             return new JsonResult() { Data = _result.Result, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
         }
-        
+
         /// <summary>
         /// method where we show the json result from the ajax call
         /// </summary>
         /// <returns></returns>
-        public ActionResult GetBikesJSON() {
+        public ActionResult GetBikesJSON()
+        {
 
             return View();
         }
 
-        public ActionResult AddBike() {
+        public ActionResult AddBike()
+        {
 
             AddBikeCommand command = new AddBikeCommand();
             AddBikeResult _result = CommandInvoker.InvokeCommand<AddBikeCommand, AddBikeResult>(command);
             return View(_result.Bike);
+        }
+
+        public ActionResult BikesFromCity(string cityName)
+        {
+            //creating new command and add some filters
+            BikeSearchCommand command = new BikeSearchCommand();
+            command.City = cityName;
+            
+            //invoking the SearchCommand
+            BikeSearchResult _result = CommandInvoker.InvokeCommand<BikeSearchCommand, BikeSearchResult>(command);
+            return View(_result.Result);
         }
     }
 }
