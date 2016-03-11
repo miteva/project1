@@ -61,6 +61,6 @@ C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\bi
 C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\bin\Debug\EntityFramework.xml
 C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\obj\Debug\Registar.DomainModel.csprojResolveAssemblyReference.cache
 C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\obj\Debug\Registar.DomainModel.dll
 C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\obj\Debug\Registar.DomainModel.pdb
+C:\Users\kmiteva\Source\Repos\project1\Registar\MvcFirst\Registar.DomainModel\obj\Debug\Registar.DomainModel.csprojResolveAssemblyReference.cache

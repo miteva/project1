@@ -141,3 +141,6 @@
 2016-03-11 10:06:26,272 [6] WARN  Registar.Common.Logging ====BikeSearchTestILogger====
 [Header]\r\n2016-03-11 10:08:43,159 [6] WARN  Registar.Common.Logging ====BikeSearchTestILogger====
 2016-03-11 10:09:02,748 [6] WARN  Registar.Common.Logging ====BikeSearchTestILogger====
+[Header]\r\n2016-03-11 10:23:56,922 [6] WARN  Registar.Common.Logging ====BikeSearchTestILogger====
+2016-03-11 10:24:01,922 [6] WARN  Registar.Common.Logging ====BikeSearchTestILogger====
+2016-03-11 10:24:04,563 [7] WARN  Registar.Common.Logging ====BikeSearchTestILogger====
